@@ -45,7 +45,6 @@ const MainBody = styled.div`
     box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.65);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /* height: 100vh; */
 `;
 const Spacing = styled.div`
     padding-top: 200px;
@@ -56,7 +55,6 @@ const IntegratedExternalLink = styled.a`
     text-decoration: none;
 
     transition: all 0.3 ease;
-
     &:hover {
         color: white;
     }
@@ -115,7 +113,6 @@ const Experience = () => {
 
             <Nav id="top"/>
 
-            {/* header section */}
             <HeaderDiv>
                 <HeaderTitle>Portfolio</HeaderTitle>
             </HeaderDiv>
@@ -184,10 +181,6 @@ const Experience = () => {
 
                 </ProjectDiv>
             </MainBody>
-
-            {/* <Container>
-                <ToTop onClick={scrollToTop}>Back To Top</ToTop>
-            </Container> */}
 
             <Spacing/>
         </Main>

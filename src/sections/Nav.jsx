@@ -1,9 +1,3 @@
-/*
- * NAV SECTION
- * to be used at the top of all pages
- * navigation bar
- */
-
 import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import styled from 'styled-components';

@@ -46,7 +46,6 @@ const MainBody = styled.div`
     box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.65);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /* height: 100vh; */
 `;
 const Spacing = styled.div`
     padding-top: 200px;
@@ -73,12 +72,6 @@ const ProjectVisualPic = styled.img`
     height: 400px;
     width: 350px;
 `;
-const ProjectText = styled.div`
-    position: absolute;
-    top:50%;
-    height:10em;
-    margin-top:-5em;
-`;
 const ProjectTitle = styled.h2`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -93,10 +86,6 @@ const ProjectDescription = styled.p`
 `;
 
 
-function scrollToTop() {
-    window.scrollTo(0, 0);
-}
-
 const Experience = () => {
     // brings to top at each refresh of page
     window.scrollTo(0, 0);
@@ -106,7 +95,6 @@ const Experience = () => {
 
             <Nav id="top"/>
 
-            {/* header section */}
             <HeaderDiv>
                 <HeaderTitle>Out Of Class</HeaderTitle>
             </HeaderDiv>
@@ -162,8 +150,6 @@ const Experience = () => {
                             reduced my carbon footprint immensely, but also allowed me to stop supporting a
                             corrupt industry.
 
-                            {/* Knowing how to sew has allowed me to shop primarily second-hand clothing, by
-                            being able to alter it to fit me, and therefore reducing my carbon footprint greatly. */}
                         </ProjectDescription>
 
                     </RightDiv>
@@ -193,12 +179,6 @@ const Experience = () => {
 
                 </ProjectDiv>
             </MainBody>
-
-            {/* <Container>
-                <ToTop onClick={scrollToTop}>Back To Top</ToTop>
-            </Container> */}
-
-            {/* <Spacing/> */}
         </Main>
     );
 }
