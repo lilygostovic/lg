@@ -125,7 +125,7 @@ const Home = () => {
             <Nav/>
             
             <HeaderDiv>
-                <HeaderTitle>Lily Gostovic</HeaderTitle>
+                <HeaderTitle>Lily Gostovic bubba</HeaderTitle>
                 <HeaderSubtitle>Student | Aspiring Engineer | Athlete</HeaderSubtitle>
             </HeaderDiv>
 
