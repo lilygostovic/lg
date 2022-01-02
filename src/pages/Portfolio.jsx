@@ -58,7 +58,7 @@ const ProjectBackground = styled.img`
     object-fit: cover;
     transition: all 0.5s ease;
 `;
-const ProjectDiv1 = styled.div`
+const ProjectDiv = styled.div`
     padding-bottom: 300px;
 `;
 const ProjectHeader = styled.h3`
@@ -68,7 +68,6 @@ const ProjectHeader = styled.h3`
     top: 5%;
     left: 10%;
 
-    /* text-transform: uppercase; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: white;
@@ -137,7 +136,6 @@ const IntegratedLink = styled.a`
         color: grey;
     }
 `;
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 function scrollToTop() {
     window.scrollTo(0, 0);
@@ -145,7 +143,7 @@ function scrollToTop() {
 
 const Experience = () => {
     // brings to top at each refresh of page
-    window.scrollTo(0, 0);
+    scrollToTop();
 
     return (
         <Main>
@@ -159,7 +157,7 @@ const Experience = () => {
             <Spacing/>
 
             <MainBody>
-                <ProjectDiv1>
+                <ProjectDiv>
                     <ExternalLink href={'https://github.com/lilygostovic/blog'} target="_blank">
                         <ProjectBackgroundContainer>
                             <ProjectBackground src={blogImg} />
@@ -182,8 +180,8 @@ const Experience = () => {
                             </ProjectSkills>
                         </ProjectBackgroundContainer>
                     </ExternalLink>
-                </ProjectDiv1>
-                <ProjectDiv1>
+                </ProjectDiv>
+                <ProjectDiv>
                     <ExternalLink href={'https://github.com/lilygostovic/bpe'} target="_blank">
                         <ProjectBackgroundContainer>
                             <ProjectBackground src={bpe} />
@@ -203,42 +201,8 @@ const Experience = () => {
                             </ProjectSkills>
                         </ProjectBackgroundContainer>
                     </ExternalLink>
-                </ProjectDiv1>
-            </MainBody>
-
-            {/* <MainBody>
-
-                <ProjectDiv>
-
-                    <LeftDiv>
-                        <ProjectVisualPic src={bpe}/>
-                    </LeftDiv>
-
-                    <RightDiv>
-
-                        <ProjectTitle>Web Scraper</ProjectTitle>
-
-                        <ProjectDescription>
-                            During the Winter 2021 semester and following summer,
-                            I worked as a research assistant for professor Daniel Rubenson's research
-                            group. Dr. Rubenson is a professor of political science at
-                            Ryerson University who researches questions of political participation
-                            and political economy in a variety of settings. I developed software
-                            for his research group that scrapes data from the internet and neatly
-                            parses it into a .csv file. To complete this project, I used Python
-                            and the Python HTML parser package BeautifulSoup.
-                        </ProjectDescription>
-
-                        <ProjectSkills>
-                            Python
-                        </ProjectSkills>
-
-                    </RightDiv>
-
                 </ProjectDiv>
-            </MainBody> */}
-
-            {/* <Spacing/> */}
+            </MainBody>
         </Main>
     );
 }
