@@ -141,8 +141,8 @@ const Home = () => {
                 </BodyParagraph>
 
                 <BodyParagraph>
-                    Currently in my second year at McGill, I have good understand of many
-                    core programming concepts and have ample experience in a variety
+                    Currently in my second year at McGill, I have a good understanding of many
+                    core programming concepts and have experience in a variety
                     of programming languages. With almost five years of experience
                     working with Java and two with Python, Javascript, and React, I
                     have been able to create and contribute to a variety of real-world

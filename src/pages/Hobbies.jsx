@@ -188,7 +188,7 @@ const Extracurriculars = () => {
                         </ProjectHeader>
                         <ProjectDescription>
                             I started playing rugby in the eleventh grade. After my first season
-                            of high school rugby, I knew it was a sport for me and quickly joined a club
+                            of high school rugby, I knew it was the sport for me and quickly joined a club
                             team, the Toronto Nomads. I played for the Nomads for the rest of high school
                             and still return to volunteer with the club whenever possible. I now play for the McGill Women's Varsity Rugby team. Representing McGill as a
                             member of Martlet Rugby has offered me the opportunity to not only grow
@@ -207,15 +207,14 @@ const Extracurriculars = () => {
                             <IntegratedLink href={'https://lily-gostovic-blog.herokuapp.com'} target="_blank">Sewing For The Environment</IntegratedLink>
                         </ProjectHeader>
                         <ProjectDescription>
-                            During the long days of the initial COVID-19 lockdowns in Toronto I found
+                            During the long days of the initial COVID-19 lockdowns in Toronto, I found
                             myself looking for new ways to fill endless days. After finding an old
                             sewing machine while cleaning out old storage rooms, I decided to learn to sew. 
                             I slowly taught myself everything there is to know about sewing, from the basics
-                            to fancy hem lines. Having the ability to
-                            alter clothes has given me the opportunity to shop primarily second-hand,
-                            allowing me to virtually eliminate my contributions to fast fashion. This not only
-                            reduced my carbon footprint immensely, but also allowed me to stop supporting a
-                            corrupt industry.
+                            to fancy hem lines. Having the ability to alter clothes has given me the opportunity
+                            to shop primarily second-hand, allowing me to virtually eliminate my contributions
+                            to fast fashion. This not only reduced my carbon footprint immensely, but also
+                            allowed me to stop supporting a corrupt industry.
                         </ProjectDescription>
                     </ProjectBackgroundContainer>
                 </ProjectDiv>
@@ -231,7 +230,7 @@ const Extracurriculars = () => {
                             three years old, having spent every Saturday and Sunday since then at the ski hill,
                             either in lessons, training, or coaching. I raced competitively for four years, then
                             coached young racers for another two. Skiing has always held a very special place
-                            in my heart, always being a way to escape reality, spend time outside, and make me
+                            in my heart, always being a way to escape reality, spend time outside, and makes me
                             actually look forward to long, cold winters! Although I am not currently racing or
                             coaching due to how time demanding being a student athlete is, I hope to reconnect
                             this part of my life one day.
