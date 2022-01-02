@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Nav from '../sections/Nav';
 
 // importing pictures
-import background from '../images/home2.jpg';
+import background from '../images/portfolio.jpg';
 import blog from '../images/blog.jpg';
 import blogImg from '../images/blog.jpg';
 import bpe from '../images/bpe.jpg';

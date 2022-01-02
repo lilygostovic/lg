@@ -51,11 +51,11 @@ const Spacing = styled.div`
     padding-top: 200px;
     box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.65);
 `;
-const ProjectDiv = styled.div`
-    padding: 0 20% 350px 20%;
-    text-align: center;
-    display: inline-flex;
-`;
+// const ProjectDiv = styled.div`
+//     padding: 0 20% 350px 20%;
+//     text-align: center;
+//     display: inline-flex;
+// `;
 const LeftDiv = styled.div`
     padding-right: 5%;
     text-align: left;
@@ -79,10 +79,97 @@ const ProjectTitle = styled.h2`
     margin: 0;
     padding-top: 40px;
 `;
+// const ProjectDescription = styled.p`
+//     padding-top: 25px;
+//     line-height: 25px;
+//     margin: 0;
+// `;
+
+// * * * * * * * ** * * * * * ** ** * *** *************
+
+const ProjectBackground = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+`;
+const ProjectDiv = styled.div`
+    padding-bottom: 300px;
+`;
+const ProjectHeader = styled.h3`
+    position: absolute;
+    display: none;
+    
+    top: 5%;
+    left: 10%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+`;
 const ProjectDescription = styled.p`
-    padding-top: 25px;
-    line-height: 25px;
+    position: absolute;
+    display: none;
     margin: 0;
+
+    left: 10%;
+    right: 10%;
+    top: 20%;
+    
+    line-height: 25px;
+    color: white;
+`;
+const ProjectSkills = styled.p`
+    position: absolute;
+    display: none;
+    margin: 0;
+
+    left: 10%;
+    right: 10%;
+    top: 70%;
+
+    font-weight: 400;
+    color: white;
+`;
+const ProjectBackgroundContainer = styled.div`
+    margin: auto; // centers div
+    
+    background-color: pink;
+    position: relative;
+
+    height: 30vw;
+    width: 50vw;
+
+    transition: all 0.3s ease;
+    &:hover{
+        ${ProjectBackground} {
+            opacity: 25%;
+        }
+        ${ProjectHeader} {
+            display: inline;
+        }
+        ${ProjectDescription}{
+            display: inline;
+        }
+        ${ProjectSkills}{
+            display: inline;
+        }
+        background-color: rgb(0,0,0);
+        transform: scale(1.05);
+    }
+`;
+const ExternalLink = styled.a`
+  text-decoration: none;
+`;
+const IntegratedLink = styled.a`
+    text-decoration: none;
+    color: white;
+    
+    transition: all 0.3s ease;
+    &:hover{
+        color: grey;
+    }
 `;
 
 
@@ -102,13 +189,12 @@ const Experience = () => {
             <Spacing/>
 
             <MainBody>
-
                 <ProjectDiv>
-
-                    <LeftDiv>
-
-                        <ProjectTitle>Martlet Rugby</ProjectTitle>
-
+                    <ProjectBackgroundContainer>
+                        <ProjectBackground src={rugby} />
+                        <ProjectHeader>
+                            <IntegratedLink href={'https://lily-gostovic-blog.herokuapp.com'} target="_blank">Martlet Rugby</IntegratedLink>
+                        </ProjectHeader>
                         <ProjectDescription>
                             I started playing rugby in the eleventh grade. After my first season
                             of high school rugby, I knew it was a sport for me and quickly joined a club
@@ -120,25 +206,15 @@ const Experience = () => {
                             strengthen my time-management skills, and organization, as well as my
                             resillience and perserverance.
                         </ProjectDescription>
-
-                    </LeftDiv>
-
-                    <RightDiv>
-                        <ProjectVisualPic src={rugby}/>
-                    </RightDiv>
-
+                    </ProjectBackgroundContainer>
                 </ProjectDiv>
 
                 <ProjectDiv>
-
-                    <LeftDiv>
-                        <ProjectVisualPic src={sew}/>
-                    </LeftDiv>
-
-                    <RightDiv>
-
-                        <ProjectTitle>Sewing For the Environment</ProjectTitle>
-
+                    <ProjectBackgroundContainer>
+                        <ProjectBackground src={sew} />
+                        <ProjectHeader>
+                            <IntegratedLink href={'https://lily-gostovic-blog.herokuapp.com'} target="_blank">Sewing For The Environment</IntegratedLink>
+                        </ProjectHeader>
                         <ProjectDescription>
                             During the long days of the initial COVID-19 lockdowns in Toronto I found
                             myself looking for new ways to fill endless days. After finding an old
@@ -149,18 +225,16 @@ const Experience = () => {
                             allowing me to virtually eliminate my contributions to fast fashion. This not only
                             reduced my carbon footprint immensely, but also allowed me to stop supporting a
                             corrupt industry.
-
                         </ProjectDescription>
-
-                    </RightDiv>
-
+                    </ProjectBackgroundContainer>
                 </ProjectDiv>
 
                 <ProjectDiv>
-
-                    <LeftDiv>
-                        <ProjectTitle>Downhill Skiing</ProjectTitle>
-
+                    <ProjectBackgroundContainer>
+                        <ProjectBackground src={ski} />
+                        <ProjectHeader>
+                            <IntegratedLink href={'https://lily-gostovic-blog.herokuapp.com'} target="_blank">Alpine Skiing</IntegratedLink>
+                        </ProjectHeader>
                         <ProjectDescription>
                             Skiing may have to be my favourite hobby of all. I have been skiing since I was
                             three years old, having spent every Saturday and Sunday since then at the ski hill,
@@ -171,12 +245,7 @@ const Experience = () => {
                             coaching due to how time demanding being a student athlete is, I hope to reconnect
                             this part of my life one day.
                         </ProjectDescription>
-                    </LeftDiv>
-
-                    <RightDiv>
-                        <ProjectVisualPic src={ski}/>
-                    </RightDiv>
-
+                    </ProjectBackgroundContainer>
                 </ProjectDiv>
             </MainBody>
         </Main>
