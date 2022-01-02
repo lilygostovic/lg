@@ -130,7 +130,7 @@ const Nav = () => {
 
                 <RightLinks>
                     <MenuOption>
-                        <ExternalLink href='https://www.linkedin.com/feed/' target="_blank">LinkedIn</ExternalLink>
+                        <ExternalLink href='https://www.linkedin.com/in/lily-gostovic-5b9243204/' target="_blank">LinkedIn</ExternalLink>
                     </MenuOption>
                     <MenuOption>
                         <ExternalLink href='https://github.com/lilygostovic' target="_blank">Github</ExternalLink>
