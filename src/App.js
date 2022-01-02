@@ -5,7 +5,7 @@ import './App.css';
 // importing components
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-import OutOfClass from './pages/OutOfClass';
+import Hobbies from './pages/Hobbies';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     
         <Route path="/" component={Home} exact/>
         <Route path="/portfolio" component={Portfolio}/>
-        <Route path="/out-of-class" component={OutOfClass}/>
+        <Route path="/hobbies" component={Hobbies}/>
 
       </Switch>
 

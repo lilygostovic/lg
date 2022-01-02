@@ -124,7 +124,7 @@ const Nav = () => {
 
                     <MenuOption><MyLink className={isPortfolio?"active":""} to="/portfolio">Portfolio</MyLink></MenuOption>
 
-                    <MenuOption><MyLink className={isOutOfClass?"active":""} to="/out-of-class">Out Of Class</MyLink></MenuOption>
+                    <MenuOption><MyLink className={isOutOfClass?"active":""} to="/hobbies">Hobbies</MyLink></MenuOption>
                     
                 </LeftLinks>
 

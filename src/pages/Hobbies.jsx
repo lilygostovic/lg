@@ -79,14 +79,6 @@ const ProjectTitle = styled.h2`
     margin: 0;
     padding-top: 40px;
 `;
-// const ProjectDescription = styled.p`
-//     padding-top: 25px;
-//     line-height: 25px;
-//     margin: 0;
-// `;
-
-// * * * * * * * ** * * * * * ** ** * *** *************
-
 const ProjectBackground = styled.img`
     width: 100%;
     height: 100%;
@@ -173,7 +165,7 @@ const IntegratedLink = styled.a`
 `;
 
 
-const Experience = () => {
+const Extracurriculars = () => {
     // brings to top at each refresh of page
     window.scrollTo(0, 0);
 
@@ -183,7 +175,7 @@ const Experience = () => {
             <Nav id="top"/>
 
             <HeaderDiv>
-                <HeaderTitle>Out Of Class</HeaderTitle>
+                <HeaderTitle>Hobbies</HeaderTitle>
             </HeaderDiv>
 
             <Spacing/>
@@ -252,4 +244,4 @@ const Experience = () => {
     );
 }
 
-export default Experience;
+export default Extracurriculars;
