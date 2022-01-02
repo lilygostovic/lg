@@ -127,7 +127,6 @@ const ProjectSkills = styled.p`
 const ProjectBackgroundContainer = styled.div`
     margin: auto; // centers div
     
-    background-color: pink;
     position: relative;
 
     height: 30vw;
