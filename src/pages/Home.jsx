@@ -6,7 +6,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 import Nav from '../sections/Nav';
 
 // importing pictures
-import background from '../images/home3.jpg';
+import background from '../images/home.jpg';
 
 
 const Main = styled.div`

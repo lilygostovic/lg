@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import Nav from '../sections/Nav';
 
 // importing pictures
-import background from '../images/ooc1.jpg';
-import rugby from '../images/rugby1.jpg';
+import background from '../images/out-of-class.jpg';
+import rugby from '../images/rugby.jpg';
 import sew from '../images/sew.jpg';
-import ski from '../images/ski1.jpg';
+import ski from '../images/ski.jpg';
 
 
 const Main = styled.div`
