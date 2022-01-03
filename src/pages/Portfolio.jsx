@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 // importing components
 import Nav from '../sections/Nav';
+import Footer from '../sections/Footer';
 
 // importing pictures
 import background from '../images/portfolio.jpg';
@@ -201,6 +202,7 @@ const Experience = () => {
                         </ProjectBackgroundContainer>
                     </ExternalLink>
                 </ProjectDiv>
+                <Footer />
             </MainBody>
         </Main>
     );

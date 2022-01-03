@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // importing components
 import Nav from '../sections/Nav';
+import Footer from '../sections/Footer';
 
 // importing pictures
 import background from '../images/out-of-class.jpg';
@@ -193,6 +194,7 @@ const Extracurriculars = () => {
                         </ProjectDescription>
                     </ProjectBackgroundContainer>
                 </ProjectDiv>
+                <Footer />
             </MainBody>
         </Main>
     );

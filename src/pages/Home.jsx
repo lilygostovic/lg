@@ -4,6 +4,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 
 // importing components
 import Nav from '../sections/Nav';
+import Footer from '../sections/Footer';
 
 // importing pictures
 import background from '../images/home.jpg';
@@ -168,6 +169,8 @@ const Home = () => {
             </Container>
 
             <Spacing/>
+            
+            <Footer />
         </Main>
     );
 }
