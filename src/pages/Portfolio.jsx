@@ -59,31 +59,19 @@ const ProjectBackground = styled.img`
     transition: all 0.5s ease;
 `;
 const ProjectDiv = styled.div`
-    padding-bottom: 300px;
+    padding-bottom: 20vw;
 `;
 const ProjectHeader = styled.h3`
     position: absolute;
     display: none;
     
-    top: 5%;
+    top: 3vh;
     left: 10%;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: white;
     font-size: 20px;
-`;
-const ProjectDescription = styled.p`
-    position: absolute;
-    display: none;
-    margin: 0;
-
-    left: 10%;
-    right: 10%;
-    top: 20%;
-    
-    line-height: 25px;
-    color: white;
 `;
 const ProjectSkills = styled.p`
     position: absolute;
@@ -92,14 +80,31 @@ const ProjectSkills = styled.p`
 
     left: 10%;
     right: 10%;
-    top: 70%;
+    top: 11vh;
 
     font-weight: 400;
+    color: white;
+`;
+const ProjectDescription = styled.p`
+    position: absolute;
+    display: none;
+    margin: 0;
+
+    font-size: 15px;
+
+    left: 10%;
+    right: 10%;
+    top: 14vh;
+    
+    line-height: 25px;
     color: white;
 `;
 const ProjectBackgroundContainer = styled.div`
     margin: auto; // centers div
     
+    overflow-x: hidden;
+    overflow-y: auto;
+
     position: relative;
 
     height: 30vw;
@@ -108,23 +113,14 @@ const ProjectBackgroundContainer = styled.div`
     transition: all 0.3s ease;
     &:hover{
         ${ProjectBackground} {
-            opacity: 25%;
+            opacity: 20%;
         }
-        ${ProjectHeader} {
-            display: inline;
-        }
-        ${ProjectDescription}{
-            display: inline;
-        }
-        ${ProjectSkills}{
+        ${ProjectHeader}, ${ProjectDescription}, ${ProjectSkills} {
             display: inline;
         }
         background-color: rgb(0,0,0);
         transform: scale(1.05);
     }
-`;
-const ExternalLink = styled.a`
-  text-decoration: none;
 `;
 const IntegratedLink = styled.a`
     text-decoration: none;
@@ -135,6 +131,10 @@ const IntegratedLink = styled.a`
         color: grey;
     }
 `;
+const ExternalLink = styled.a`
+    text-decoration: none;
+`;
+
 
 function scrollToTop() {
     window.scrollTo(0, 0);
@@ -163,6 +163,9 @@ const Experience = () => {
                             <ProjectHeader>
                                 <IntegratedLink href={'https://lily-gostovic-blog.herokuapp.com'} target="_blank">Lily's Diaries</IntegratedLink>
                             </ProjectHeader>
+                            <ProjectSkills>
+                                Javascript, React, Nodejs, HTML, CSS
+                            </ProjectSkills>
                             <ProjectDescription>
                                 A personal blog using create-react-app. A passion project created to
                                 practice and enhance skills in HTML, CSS, Javascript, and React. This
@@ -174,9 +177,6 @@ const Experience = () => {
                                 learned in developing the website for my blog allowed me to easily
                                 create this website you are reading right now!
                             </ProjectDescription>
-                            <ProjectSkills>
-                                Javascript, React, Nodejs, HTML, CSS
-                            </ProjectSkills>
                         </ProjectBackgroundContainer>
                     </ExternalLink>
                 </ProjectDiv>
@@ -185,6 +185,9 @@ const Experience = () => {
                         <ProjectBackgroundContainer>
                             <ProjectBackground src={bpe} />
                             <ProjectHeader>Web Scraper</ProjectHeader>
+                            <ProjectSkills>
+                                Python
+                            </ProjectSkills>
                             <ProjectDescription>
                                 During the Winter 2021 semester and following summer,
                                 I worked as a research assistant for professor Daniel Rubenson's research
@@ -195,9 +198,6 @@ const Experience = () => {
                                 parses it into a .csv file. To complete this project, I used Python
                                 and the Python HTML parser package BeautifulSoup.
                             </ProjectDescription>
-                            <ProjectSkills>
-                                Python
-                            </ProjectSkills>
                         </ProjectBackgroundContainer>
                     </ExternalLink>
                 </ProjectDiv>

@@ -51,34 +51,6 @@ const Spacing = styled.div`
     padding-top: 200px;
     box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.65);
 `;
-// const ProjectDiv = styled.div`
-//     padding: 0 20% 350px 20%;
-//     text-align: center;
-//     display: inline-flex;
-// `;
-const LeftDiv = styled.div`
-    padding-right: 5%;
-    text-align: left;
-    vertical-align: middle;
-`;
-const RightDiv = styled.div`
-    padding-left: 5%;
-    text-align: right;
-    vertical-align: middle;
-`;
-const ProjectVisualPic = styled.img`
-    object-fit: cover;
-    opacity: 0.9;
-    height: 400px;
-    width: 350px;
-`;
-const ProjectTitle = styled.h2`
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    margin: 0;
-    padding-top: 40px;
-`;
 const ProjectBackground = styled.img`
     width: 100%;
     height: 100%;
@@ -86,13 +58,13 @@ const ProjectBackground = styled.img`
     transition: all 0.5s ease;
 `;
 const ProjectDiv = styled.div`
-    padding-bottom: 300px;
+    padding-bottom: 20vw;
 `;
 const ProjectHeader = styled.h3`
     position: absolute;
     display: none;
     
-    top: 5%;
+    top: 15px;
     left: 10%;
 
     font-family: 'Montserrat', sans-serif;
@@ -105,28 +77,21 @@ const ProjectDescription = styled.p`
     display: none;
     margin: 0;
 
+    font-size: 15px;
+
     left: 10%;
     right: 10%;
-    top: 20%;
+    top: 70px;
     
     line-height: 25px;
-    color: white;
-`;
-const ProjectSkills = styled.p`
-    position: absolute;
-    display: none;
-    margin: 0;
-
-    left: 10%;
-    right: 10%;
-    top: 70%;
-
-    font-weight: 400;
     color: white;
 `;
 const ProjectBackgroundContainer = styled.div`
     margin: auto; // centers div
     
+    overflow-x: hidden;
+    overflow-y: auto;
+
     position: relative;
 
     height: 30vw;
@@ -137,21 +102,12 @@ const ProjectBackgroundContainer = styled.div`
         ${ProjectBackground} {
             opacity: 25%;
         }
-        ${ProjectHeader} {
-            display: inline;
-        }
-        ${ProjectDescription}{
-            display: inline;
-        }
-        ${ProjectSkills}{
+        ${ProjectHeader}, ${ProjectDescription}{
             display: inline;
         }
         background-color: rgb(0,0,0);
         transform: scale(1.05);
     }
-`;
-const ExternalLink = styled.a`
-  text-decoration: none;
 `;
 const IntegratedLink = styled.a`
     text-decoration: none;
