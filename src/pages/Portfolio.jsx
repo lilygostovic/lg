@@ -8,9 +8,9 @@ import Footer from '../sections/Footer';
 
 // importing pictures
 import background from '../images/portfolio.jpg';
-import blog from '../images/blog.jpg';
 import blogImg from '../images/blog.jpg';
 import bpe from '../images/bpe.jpg';
+import ceu from '../images/ceu.jpg'
 
 
 const Main = styled.div`
@@ -157,6 +157,26 @@ const Experience = () => {
             <Spacing/>
 
             <MainBody>
+                <ProjectDiv>
+                <ExternalLink href={'https://github.com/lilygostovic/bpe'} target="_blank">
+                        <ProjectBackgroundContainer>
+                            <ProjectBackground src={ceu} />
+                            <ProjectHeader>Class Enrollment Utility</ProjectHeader>
+                            <ProjectSkills>
+                                Selenium, Chrome Driver, Python
+                            </ProjectSkills>
+                            <ProjectDescription>
+                                The first two weeks of every semester at McGill is called the add/drop
+                                period. During this time, students are able to change their classes and
+                                finalize their schedules. Throughout the add/drop period, class seats
+                                are constantly being opened and quickly taken by students eager to get
+                                into their desired classes. Include this script in a crontab bash script
+                                that runs every 20 seconds to secure a spot in a desired class as soon
+                                as one opens.
+                            </ProjectDescription>
+                        </ProjectBackgroundContainer>
+                    </ExternalLink>
+                </ProjectDiv>
                 <ProjectDiv>
                     <ExternalLink href={'https://github.com/lilygostovic/blog'} target="_blank">
                         <ProjectBackgroundContainer>
