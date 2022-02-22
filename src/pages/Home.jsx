@@ -138,7 +138,7 @@ const Home = () => {
                     McGill University with an interest in web development and a passion for
                     learning new skills. I also enjoy skiing and playing rugby in my
                     spare time, but you can discover more about my extracurricular
-                    interests <IntegratedLink to="/out-of-class">here</IntegratedLink>.
+                    interests <IntegratedLink to="/hobbies">here</IntegratedLink>.
                 </BodyParagraph>
 
                 <BodyParagraph>
