@@ -158,7 +158,7 @@ const Experience = () => {
 
             <MainBody>
                 <ProjectDiv>
-                <ExternalLink href={'https://github.com/lilygostovic/bpe'} target="_blank">
+                <ExternalLink href={'https://github.com/lilygostovic/class-enroller'} target="_blank">
                         <ProjectBackgroundContainer>
                             <ProjectBackground src={ceu} />
                             <ProjectHeader>Class Enrollment Utility</ProjectHeader>
